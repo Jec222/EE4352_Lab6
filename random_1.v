@@ -4,7 +4,7 @@ reg Cin;
 reg [3:0] A;
 reg [3:0] B;
 integer seed;
-
+integer i =10000;
 initial
 begin
 clock = 0;
@@ -19,7 +19,7 @@ initial
 
 begin
 seed=$random;
-repeat(5)@(negedge clock)
+repeat(i)@(negedge clock)
 begin 
     Cin= $random(seed) ; 
     A = $random(seed);
