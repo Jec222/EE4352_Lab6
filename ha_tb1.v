@@ -17,18 +17,17 @@ begin
 A=0;
 B=0;
 clk=0;
-forever 
-#10 clk=~clk;
+forever #10 clk=~clk;
 end
 
 initial
 begin
-    repeat(10)@(negedge clk)
+    repeat(10)@(posedge clk)
     begin
     A=$random;
     B=$random;   
     end
-#120 $finish;
+#200 $finish;
 end
 
 initial
