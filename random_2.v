@@ -5,7 +5,7 @@ integer seed;
 
 initial
 begin
-    seed=1
+    seed=1;
     address=0;
 end
 
