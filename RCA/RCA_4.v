@@ -1,3 +1,4 @@
+`include "FA.v"
 module RCA_4 (a,b,cin,sum,cout);
 	input [3:0] a, b; 
 	input cin;

@@ -1,3 +1,4 @@
+`include "RCA_4.v"
 module RCA_4_tb;
 
 reg [3:0] a, b;
