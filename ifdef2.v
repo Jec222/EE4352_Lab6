@@ -4,6 +4,7 @@ initial
 begin
     `ifdef T1
     $display("This is first T1");
+    $display("This is first T1");
     `elsif T2
     $display("This is second T2");
     `else 
